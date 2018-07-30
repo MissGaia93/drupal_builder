@@ -1,0 +1,221 @@
+#block-elastic-search-filters {
+  display: flex; }
+  #block-elastic-search-filters button, #block-elastic-search-filters input, #block-elastic-search-filters select, #block-elastic-search-filters textarea {
+    height: 3.4em;
+    line-height: 1; }
+  #block-elastic-search-filters .card-header {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: none; }
+    #block-elastic-search-filters .card-header i {
+      position: absolute;
+      color: white;
+      font-size: 17px;
+      margin-left: 11px; }
+  #block-elastic-search-filters .card {
+    border: none; }
+  #block-elastic-search-filters .card-block {
+    background-color: #F1F1F1;
+    margin: 2em 1em 0 1em; }
+  #block-elastic-search-filters #collapseOne {
+    background-color: #F1F1F1;
+    margin: 0 !important;
+    border: none !important;
+    padding-bottom: 2em; }
+  #block-elastic-search-filters label {
+    margin: 0;
+    padding: 0; }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .elastic-search input {
+    margin: 1px !important; }
+  .elastic-search button {
+    height: auto !important; }
+
+  .elastic-filter-container {
+    max-width: 72em;
+    margin: 0 auto; }
+    .elastic-filter-container #collapseOne {
+      padding-top: 1em; }
+      .elastic-filter-container #collapseOne .elastic-sort select {
+        width: 145px; } }
+.elastic-search {
+  background-color: #F1F1F1 !important; }
+  .elastic-search #breadcrumbs-container {
+    margin-bottom: 0; }
+  .elastic-search .elastic-filter-container {
+    border-bottom: 1px solid #AEB0B5; }
+  .elastic-search .elastic-row {
+    display: flex;
+    flex: 1;
+    max-width: 72em;
+    margin: 0 auto;
+    padding: .5em; }
+  .elastic-search #block-elastic-search-filters {
+    border: 0; }
+    .elastic-search #block-elastic-search-filters #collapseOne {
+      margin-top: 0; }
+      .elastic-search #block-elastic-search-filters #collapseOne .card-block {
+        margin-top: 0; }
+        .elastic-search #block-elastic-search-filters #collapseOne .card-block h1 {
+          margin-top: 0; }
+        .elastic-search #block-elastic-search-filters #collapseOne .card-block .elastic-jobs {
+          background-color: #fff;
+          border: .1rem solid #5b616b; }
+          .elastic-search #block-elastic-search-filters #collapseOne .card-block .elastic-jobs input {
+            border: none !important;
+            margin: 0;
+            border-radius: 0;
+            color: #212121; }
+          .elastic-search #block-elastic-search-filters #collapseOne .card-block .elastic-jobs button {
+            padding: 0;
+            height: 100%;
+            align-self: center;
+            background-color: white !important; }
+          .elastic-search #block-elastic-search-filters #collapseOne .card-block .elastic-jobs i {
+            background-color: #fff;
+            align-self: center;
+            padding-right: 10px;
+            font-size: 20px;
+            color: #913B2D; }
+        .elastic-search #block-elastic-search-filters #collapseOne .card-block .elastic-sort,
+        .elastic-search #block-elastic-search-filters #collapseOne .card-block .elastic-agency {
+          position: relative; }
+  .elastic-search .results-container {
+    background-color: #ffffff;
+    max-width: 72em;
+    margin: 0 auto; }
+    .elastic-search .results-container .left-teaser-text .dol-date-text {
+      text-transform: capitalize; }
+    .elastic-search .results-container .left-teaser-text h4 {
+      text-decoration: underline; }
+    .elastic-search .results-container .left-teaser-text span {
+      color: #212121; }
+    .elastic-search .results-container h3 {
+      padding: 30px 0; }
+    .elastic-search .results-container .no-results h3 {
+      padding: 1em 0; }
+  .elastic-search .cd-main-content {
+    max-width: unset;
+    padding: 0; }
+  .elastic-search .elastic-below-filter {
+    background-color: #ffffff;
+    min-height: 50vh;
+    padding-bottom: 1px; }
+
+@media all and (max-width: 767px) {
+  .elastic-search .card {
+    flex: 1 1 auto !important; }
+    .elastic-search .card .sort-container {
+      flex-direction: column !important; }
+      .elastic-search .card .sort-container .elastic-sort {
+        padding-top: 1em;
+        flex: 1 1 auto !important;
+        flex-direction: column !important; }
+      .elastic-search .card .sort-container .elastic-agency {
+        padding-top: 1em;
+        flex: 1 1 auto !important; }
+      .elastic-search .card .sort-container i {
+        position: absolute;
+        right: 3%;
+        top: 63%; } }
+@media all and (min-width: 768px) {
+  .elastic-search .sort-container {
+    padding-top: 1.5rem !important; }
+    .elastic-search .sort-container .elastic-sort {
+      align-items: center !important; }
+      .elastic-search .sort-container .elastic-sort label {
+        padding-right: 0.5em !important; }
+      .elastic-search .sort-container .elastic-sort select {
+        width: 140px; }
+      .elastic-search .sort-container .elastic-sort i {
+        position: absolute;
+        right: 7%; }
+    .elastic-search .sort-container .elastic-agency {
+      align-items: center !important; }
+      .elastic-search .sort-container .elastic-agency label {
+        padding: 0 0.5rem 0 1.5rem !important; }
+      .elastic-search .sort-container .elastic-agency select {
+        width: 370px; }
+      .elastic-search .sort-container .elastic-agency i {
+        position: absolute;
+        right: 3%; }
+  .elastic-search .results {
+    width: 760px; } }
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+*/
+ul.simple-pagination {
+  list-style: none; }
+
+.simple-pagination {
+  display: block;
+  padding: 0 5px 5px 0;
+  margin: 0; }
+
+.simple-pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.simple-pagination li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: left; }
+
+span.ellipse.clickable {
+  cursor: pointer; }
+
+.ellipse input {
+  width: 3em; }
+
+/*------------------------------------*\
+	Light Theme Styles
+\*------------------------------------*/
+.light-theme span {
+  cursor: pointer; }
+
+.light-theme a, .light-theme span {
+  float: left;
+  color: #5B616A;
+  font-size: 17px !important;
+  line-height: 24px !important;
+  font-weight: normal;
+  text-align: center;
+  border: 1px solid #AEB0B5 !important;
+  padding: 0.4em 0.8em !important;
+  background-color: #F9F9F9; }
+
+.light-theme a:hover, .light-theme li:not(.disabled):not(.active) span:hover {
+  text-decoration: none;
+  background: #FCFCFC; }
+
+.light-theme .current {
+  background-color: #D3D3D3; }
+
+.light-theme .ellipse {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-weight: bold;
+  cursor: default; }
+
+#pagination-demo {
+  min-height: 3rem;
+  padding-left: 2%; }
+  #pagination-demo a {
+    text-decoration: none;
+    color: #5B616A; }
+
+#pager-container {
+  padding: 2rem 0; }
+
+@media all and (max-width: 526px) {
+  #pager-container {
+    margin-bottom: 4rem; } }
+
+/*# sourceMappingURL=elastic-search.css.map */

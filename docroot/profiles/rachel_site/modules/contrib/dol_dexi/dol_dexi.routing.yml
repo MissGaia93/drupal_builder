@@ -1,0 +1,7 @@
+dol_dexi.search:
+  path: '/elastic-search'
+  defaults:
+    _controller: 'Drupal\dol_dexi\Controller\DexiController::content'
+    _title: 'Search'
+  requirements:
+    _permission: 'access content'

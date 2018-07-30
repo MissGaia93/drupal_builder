@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains dol_dexi.module.
+ * The primary method being used to compile sass is to navigate to the dol_dexi module folder on the command line and
+ * run "sass --watch scss/elastic-search.scss:css/elastic-search.css". This will be replaced by the standard gulp
+ * process in the near future.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function dol_dexi_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dol_dexi module.
+    case 'help.page.dol_dexi':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom module that consumes a dexi endpoint.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function dol_dexi_theme($existing, $type, $theme, $path) {
+    return array(
+        'elastic_search' => array(
+            'variables' => array(
+                'data' => NULL,
+                'elastic_results' => NULL
+            )
+        ),
+    );
+}

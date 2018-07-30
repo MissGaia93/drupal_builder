@@ -1,0 +1,10 @@
+elasticsearch-scripts:
+    version: 1.x
+    css:
+      theme:
+        css/elastic-search.css: {}
+    js:
+        js/elasticSearch.js: {}
+        js/pagination.js: {}
+    dependencies:
+        - core/jquery

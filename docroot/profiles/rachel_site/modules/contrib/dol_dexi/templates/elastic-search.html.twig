@@ -1,0 +1,85 @@
+{#{% for item in elastic_title %}#}
+  {#{{ dsm(item) }}#}
+{#{% endfor %}#}
+
+
+  <div class="row elastic-filter-container">
+    <div class="elastic-row">
+      <div class="card" id="block-elastic-search-filters">
+        <div id="collapseOne" class="collapse multi-collapse show" role="tabpanel" aria-labelledby="headingOne">
+          <div class="card-block">
+            <form id="views-exposed-form-elastic-search" accept-charset="UTF-8">
+
+              <div class="elastic-jobs input-group">
+                <input class="form-control form-text" type="text" placeholder="Enter your search term here...">
+                <button type="submit" title="Click to Search" class="btn btn-primary search-button">
+                  <i class="fa fa-2x fa-search"></i>
+                </button>
+              </div>
+
+              <div class="sort-container d-flex flex-wrap">
+                <div class="elastic-sort d-flex flex-wrap">
+                  <label>Sort By:</label>
+                  <select>
+                    <option value="">Relevance</option>
+                    <option value="date">Date</option>
+                  </select>
+                  <i class="chevron"></i>
+                </div>
+
+                <div class="elastic-agency d-flex flex-wrap">
+                  <label>Search By Agency:</label>
+                  <select>
+                    <option value="" selected>-- Please choose an Agency --</option>
+                    <option value="dol">All of DOL</option>
+                    <option value="arb">ARB</option>
+                    <option value="brb">BRB</option>
+                    <option value="ilab">ILAB</option>
+                    <option value="bls">BLS</option>
+                    <option value="cfbnp">CFBNP</option>
+                    <option value="ebsa">EBSA</option>
+                    <option value="ecab">ECAB</option>
+                    <option value="eta">ETA</option>
+                    <option value="esa">ESA</option>
+                    <option value="msha">MSHA</option>
+                    <option value="osha">OSHA</option>
+                    <option value="oalj">OALJ</option>
+                    <option value="ocia">OCIA</option>
+                    <option value="odep">ODEP</option>
+                    <option value="ofccp">OFCCP</option>
+                    <option value="oig">OIG</option>
+                    <option value="olms">OLMS</option>
+                    <option value="opa">OPA</option>
+                    <option value="ope">OPE</option>
+                    <option value="osbp">OSBP</option>
+                    <option value="oasam">OASAM</option>
+                    <option value="oasp">OASP</option>
+                    <option value="ocfo">OCFO</option>
+                    <option value="osec">OSEC</option>
+                    <option value="sol">SOL</option>
+                    <option value="owcp">OWCP</option>
+                    <option value="eeombd">EEOMBD</option>
+                    <option value="vets">VETS</option>
+                    <option value="whd">WHD</option>
+                    <option value="wb">WB</option>
+                  </select>
+                  <i class="chevron"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="elastic-below-filter">
+  <div class="results-container">
+    <div class="cd-overlay"></div>
+    <a id="main-content" tabindex="-1"></a>
+    <div class="results dexi-results">
+      <h3 id="elastic-begin-search">Please enter a search term in the box above.</h3>
+    </div>
+    <div id="pager-container"></div>
+  </div>
+</div>
